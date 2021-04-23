@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ITC Precourse</title>
+    <h1>"ITC Fullstack Development"</h1>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            var i;
+            var name = [
+               "HTML", "CSS", "And JavaScript"
+            ];
+
+            for (i = 0; i < name.length; i++) {
+
+                document.getElementById("container_lang").innerHTML += name[i] + " ";
+
+            }
+
+            var buttonElement = document.getElementById("buttonNext");
+            var buttonPrevious = document.getElementById("buttonPrevious");
+            var pElement = document.getElementById("areaCount");
+            var countmap = 0;
+
+            buttonElement.onclick = function () {
+                if (countmap === 0) {
+                    var map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48570.513303009495!2d-3.7110707545737287!3d40.46072621601744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229243f6c7975%3A0x84f77087e19461b6!2zQ2hhbWFydMOtbiwgTWFkcmlkLCBFc3Bhw7Fh!5e0!3m2!1ses-419!2smx!4v1619056063689!5m2!1ses-419!2smx";
+                    
+                    document.getElementById("mapPrincipal").src = map;
+                    buttonPrevious.style.visibility = 'visible';
+                }
+                if (countmap === 1) {
+                    var map1 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.5732944847673!2d-2.931155684794906!3d35.29173398028695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd770f67b67948d5%3A0x4c45c6740cfeb343!2sMelilla!5e0!3m2!1sen!2sus!4v1619056279269!5m2!1sen!2sus";
+                    document.getElementById("mapPrincipal").src = map1;
+                    buttonPrevious.style.visibility = 'visible';
+                }
+
+                if (countmap === 2) {
+                    var map2 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317462.5437079225!2d-0.1654353308820418!3d51.56500473436695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a689a0c6d81d%3A0x869c417ae78b7e4!2sEast%20London%2C%20Reino%20Unido!5e0!3m2!1ses-419!2smx!4v1619057484113!5m2!1ses-419!2smx";
+                    document.getElementById("mapPrincipal").src = map2;
+                    buttonElement.style.visibility = 'visible';
+                }
+
+                if (countmap === 3) {
+                    var map3 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27993507776!2d-74.25988168515778!3d40.69767006011448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2smx!4v1619106819157!5m2!1sen!2smx";
+                    document.getElementById("mapPrincipal").src = map3;
+                    buttonElement.style.visibility = 'visible';
+                }
+
+                if (countmap === 4) {
+                    var map4 ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127181.6234232974!2d-76.96860539293516!3d40.055593511705126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sNew%20Jersey%2C%20USA!5e0!3m2!1sen!2smx!4v1619107003843!5m2!1sen!2smx"  ;
+                    document.getElementById("mapPrincipal").src = map4;
+                    buttonElement.style.visibility = 'visible';
+                }      
+                
+                if (countmap === 5) {
+                    var map5 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217026.85597847175!2d35.03526955847501!3d31.796533731729866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7d634c1fc4b%3A0xd96f623e456ee1cb!2sJerusalem%2C%20Israel!5e0!3m2!1sen!2smx!4v1619107088554!5m2!1sen!2smx";
+                    document.getElementById("mapPrincipal").src = map5;
+                    buttonElement.style.visibility = 'visible';
+                }                
+
+                if (countmap === 6) {
+                    var map6 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96908.44917772243!2d22.87598630894982!3d40.621301646044785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838f41428e0ed%3A0x9bae715b8d574a9!2sThessaloniki%2C%20Greece!5e0!3m2!1sen!2smx!4v1619108802588!5m2!1sen!2smx";
+                    document.getElementById("mapPrincipal").src = map6;
+                    buttonElement.style.visibility = 'visible';
+                }
+
+                if (countmap === 7) {
+                    var map7 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.4517284403128!2d-99.07409698622465!3d19.436081245608335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc77bd93229f%3A0x2d07ef561bad244!2sMexico%20City%20International%20Airport!5e0!3m2!1sen!2smx!4v1619114806673!5m2!1sen!2smx";
+                    document.getElementById("mapPrincipal").src = map7;
+                    buttonElement.style.visibility = 'visible';
+                }
+                
+                if (countmap === 8) {
+                    var map8 ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109136.80134682947!2d34.72084570411305!3d31.261569053721285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15026640029f8777%3A0x8dee8012deb5dd8!2sBe&#39;er%20Sheva%2C%20Israel!5e0!3m2!1sen!2smx!4v1619115713943!5m2!1sen!2smx";
+                    document.getElementById("mapPrincipal").src = map8;
+                    buttonElement.style.visibility = 'hidden';
+                }
+                countmap++;
+                pElement.textContent = countmap;
+                if (countmap >= 10) {
+                    pElement.textContent = 0;
+                    countmap = 0;
+                }
+            }
+
+            buttonPrevious.onclick = function () {
+                if (pElement.innerText == 1) {
+                    var map7 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.1695103389816!2d-2.915805084553799!3d43.24786907913737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4e4940fe6dc9%3A0xd66ee001edceb45b!2sSan%20Joaquin%20Kalea%2C%202%2C%2048004%20Bilbo%2C%20Bizkaia%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1619055574950!5m2!1ses-419!2smx";
+                    document.getElementById("mapPrincipal").src = map7;
+                    buttonPrevious.style.visibility = 'hidden';
+                }
+                if (pElement.innerText == 2) {
+                    var map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48570.513303009495!2d-3.7110707545737287!3d40.46072621601744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229243f6c7975%3A0x84f77087e19461b6!2zQ2hhbWFydMOtbiwgTWFkcmlkLCBFc3Bhw7Fh!5e0!3m2!1ses-419!2smx!4v1619056063689!5m2!1ses-419!2smx";                    
+                    document.getElementById("mapPrincipal").src = map;
+                    buttonElement.style.visibility = 'visible';
+                    pElement.textContent = 1;
+                }
+                if (pElement.innerText == 3) {
+                    var map1 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.5732944847673!2d-2.931155684794906!3d35.29173398028695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd770f67b67948d5%3A0x4c45c6740cfeb343!2sMelilla!5e0!3m2!1sen!2sus!4v1619056279269!5m2!1sen!2sus";
+                    document.getElementById("mapPrincipal").src = map1;
+                    buttonElement.style.visibility = 'visible';
+                    pElement.textContent = 2;
+                }
+                if (pElement.innerText == 4) {
+                    var map2 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317462.5437079225!2d-0.1654353308820418!3d51.56500473436695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a689a0c6d81d%3A0x869c417ae78b7e4!2sEast%20London%2C%20Reino%20Unido!5e0!3m2!1ses-419!2smx!4v1619057484113!5m2!1ses-419!2smx";
+                    document.getElementById("mapPrincipal").src = map2;
+                    buttonElement.style.visibility = 'visible';
+                    pElement.textContent = 3;
+                }      
+                if (pElement.innerText == 5) {
+                    var map3 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27993507776!2d-74.25988168515778!3d40.69767006011448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2smx!4v1619106819157!5m2!1sen!2smx";
+                    document.getElementById("mapPrincipal").src = map3;
+                    buttonElement.style.visibility = 'visible';
+                    pElement.textContent = 4;
+                }     
+                if (pElement.innerText == 6) {
+                    var map4 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127181.6234232974!2d-76.96860539293516!3d40.055593511705126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sNew%20Jersey%2C%20USA!5e0!3m2!1sen!2smx!4v1619107003843!5m2!1sen!2smx";
+                    document.getElementById("mapPrincipal").src = map4;
+                    buttonElement.style.visibility = 'visible';
+                    pElement.textContent = 5;
+                }
+                if (pElement.innerText == 7) {
+                    var map5 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217026.85597847175!2d35.03526955847501!3d31.796533731729866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7d634c1fc4b%3A0xd96f623e456ee1cb!2sJerusalem%2C%20Israel!5e0!3m2!1sen!2smx!4v1619107088554!5m2!1sen!2smx";
+                    document.getElementById("mapPrincipal").src = map5;
+                    buttonElement.style.visibility = 'visible';
+                    pElement.textContent = 6;
+                }                 
+                if (pElement.innerText == 8) {
+                    var map6 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.4517284403128!2d-99.07409698622465!3d19.436081245608335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fc77bd93229f%3A0x2d07ef561bad244!2sMexico%20City%20International%20Airport!5e0!3m2!1sen!2smx!4v1619114806673!5m2!1sen!2smx";
+                    document.getElementById("mapPrincipal").src = map6;
+                    buttonElement.style.visibility = 'visible';
+                    pElement.textContent = 7;
+                }     
+                if (pElement.innerText == 9) {
+                    var map7 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109136.80134682947!2d34.72084570411305!3d31.261569053721285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15026640029f8777%3A0x8dee8012deb5dd8!2sBe&#39;er%20Sheva%2C%20Israel!5e0!3m2!1sen!2smx!4v1619115713943!5m2!1sen!2smx";
+                    document.getElementById("mapPrincipal").src = map7;
+                    buttonElement.style.visibility = 'visible';
+                    pElement.textContent = 8;
+                }                                                                                      
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid"
+    <section>
+        <div class="page-wrapper">
+            <!-- <a href="https://www.itc.tech/" class="nav-item"></a> -->
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a class="active" href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <section> 
+            <h1>MY PROFILE</h1>
+            <p>Hello everyone my name is Aritz Jimenez Garcia (also known as Yehuda Klein, my Hebrew name) , here I am going to explain why I am interested in coding, my educational experiences and career experiences, i will also explain my personal interests </p> 
+            <p> First I'm going to start saying, why? I am interested in code: I always had curiosity in my life for the code, when I went to school they spoke of web pages hacking and various topics of the code and I always wanted to know how is working , during my life I met several programmers that They talked about the code, later I when was living in New York I met an Israeli friend who is a programer  and defending companies from viruses and he  showed me some things, then I saw some videos and I wanted to know how to study the code and about programming and dedicate my life to this as a future, this is my history about why im interesting in code , I hope will be interesting<P>
+            <p> Second I'm going to talk about my educational and professional experiences, in my life I study until  Bachiller and I was in several English courses in London and New York, I was also in a course of how to invest in the stock market, also work as a bartender, secretary, and supervisor as a masgiagh  From a Kosher food restaurant, and shipping in a fishstore , I am also converted to  Judaism and studied in a Yeshiva in Israel also some halaja courses and Jewish laws and I was the secretary of one  rabbinical court in New York</p> 
+            <P>Third I'm going to talk about my personal interests, I have several interests in my life I want to do, I want in my life to dedicate myself to be a programmer  and create web pages , applications as well and  defend companies from viruses, I want to live my life in Israel, do my aliyah after finish the course and continue studying programming, as well as fulfill several dreams in my life like having my own company and helping Many  people, and I hope not to disappoint anyone</P>
+        <section>
+            <h1>MY HISTORY</h1>
+            <p>Here I am going to explain where I was born and in the cities that I have lived </p>
+            <p> I was born in Spain Bilbao Basque Country, in my life I have lived in several countries and cities, the cities where I have lived have been in Spain: Bilbao, Madrid, Melilla, in the United Kingdom: London, in USA: New York, New Jersey, in Israel: Jerusalem, Beer sheva in Greece: Thessaloniki, in Mexico: Mexico city</p>        
+        </section>
+        <section>
+            <p id="areaCount" style="display:none"></p>
+            <p id="areaCont2"></p>
+            <h1>SOME CITYS</h1>
+            <p id="mapBilbao">Citys: Bilbao,Madrid,Melilla,London,NewYork,NewJersey,Jerusalem,Jerusalem,MexicoCity,Beer-Sheva</p>
+            <div id="map_wrapper">
+                <div id="map_canvas" class="mapping">
+                    <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=AIzaSyC1OjlhhwpOELo-Th8fCV4rJhZ90miSNOA'></script>
+                    <iframe id="mapPrincipal" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.1695103389816!2d-2.915805084553799!3d43.24786907913737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4e4940fe6dc9%3A0xd66ee001edceb45b!2sSan%20Joaquin%20Kalea%2C%202%2C%2048004%20Bilbo%2C%20Bizkaia%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1619055574950!5m2!1ses-419!2smx" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <button class="button button1" type="button" id="buttonPrevious" style="visibility:hidden;">Previous</button>
+            <button class="button button2" type="button" id="buttonNext" >Next</button>
+        </section>
+        <section></section>
+        <p><br></p>p>
+    </section>
+    </div>
+    <footer>
+        <div class="footnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <p id="container_lang">This page was built using </p>
+        </div>
+    </footer>
+    <script src="portfolio.js"></script>    
+</body>
+</html>

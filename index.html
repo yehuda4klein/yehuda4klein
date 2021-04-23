@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./style.css" rel="stylesheet" />    
+    <title>ITC Precourse</title>
+
+    <h1 class="title">"ITC Fullstack Development"</h1>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/89aff64591.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" type="text/css" href="csshake-slow.min.css">
+    <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake-slow.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            var i;
+            var nameLang = [
+               "HTML", "CSS", "And JavaScript"
+            ];
+
+            for (i = 0; i < nameLang.length; i++) {
+
+                document.getElementById("container_lang").innerHTML += nameLang[i] + " ";
+
+            }
+        });
+
+        $(function () {
+            $('.card').click(function () { $(this).toggleClass('flip'); });
+        });
+    </script>
+</head>
+
+<body class="scroll-assist">
+    <section>
+        <div class="page-wrapper">
+            <!-- <a href="https://www.itc.tech/" class="nav-item"></a> -->
+            <div class="navbar">
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="shake-opacity">
+                <div class="card">
+                    <img id="profile-image"
+                         src="profileImage.src"
+                         alt="Israel Tech Challenge"
+                         class="profile-image" />
+                    <div>
+                        <p id="my-name" class="text-name">
+                            <!--<script>"myName.name"</script>-->
+                        </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/aritz-jimenez-garcia-bb90071b1/">Linkedin</a></li>
+                            <li><i class="fab fa-github-square"></i><a href="https://github.com/yehuda4klein">github</a></li>
+                            <li><i class="fab fa-stack-overflow"></i><a href="https://stackoverflow.com/users/15697480/aritz-jimenez-garcia">stackoverflow</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>&#169; Israel Tech Challenge</div>
+    <footer>
+        <div class="footnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <p id="container_lang">This page was built using </p>   
+        </div>
+    </footer>
+    <script src="portfolio.js"></script>
+
+</body>
+</html>

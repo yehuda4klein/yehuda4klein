@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+
+title {
+  color: rgb(20, 14, 3);
+  background-color: rgb(235, 198, 198);
+  border: 1px solid rgb(224, 196, 196);
+  position: center;
+  font-family: "Josefin Sans";
+  text-align: center;
+}
+
+
+body {
+  background-image: linear-gradient(to bottom right, lightgray, white);
+  font-family:"Josefin Sans";
+  font-size: 20px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:blue;
+  color: azure;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  font-family:"Josefin Sans";
+  font-size: 130% ;
+  text-align: center;
+
+
+}
+h1{ color:white;
+  background-color: blue;
+  text-align: center;
+  text: size 500px;
+ 
+
+}
+
+.footnav {
+  overflow: hidden;
+  background-color:blue;
+  color:azure;
+  position: fixed; 
+  left: 0; 
+  bottom: 0;
+  width: 100%; 
+  font-family:"Josefin Sans";
+  font-size: 100%;
+  text-align: center;
+}
+
+.button {
+  background-color: #ede13d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+}
+
+.card {
+  align-items: center;
+  background-image: linear-gradient(to bottom right, white, lightgray);
+ 
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+  padding: 50px;
+}
+
+.nav-item {
+  align-self: flex-end;
+  font-size: 18px;
+  margin: 15px;
+  text-decoration: none;
+}
+
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  height: 180px;
+  margin: 50px;
+  width: 180px;
+}
+.text-name {
+    font-size: large;
+    color:white;
+}
+.card {
+  border: solid 1px black;
+  left: 100px;
+  position: relative;
+}
+
+.flip {
+    transform: perspective(500px) rotateY(-180deg) translateX(100%);
+}
+#map_wrapper {
+  height: 400px;
+}
+
+#map_canvas {
+  width: 100%;
+  height: 100%;
+}
+
+p{ 
+  background-color:blue;
+  font-weight: 200;
+  font-style: italic;
+  color:white;
+}
+a{
+  color: white;
+}
+ul{
+  color:blue
+  
+}
+
+
+
+

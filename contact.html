@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ITC Precourse</title>
+    <h1>"ITC Fullstack Development"</h1>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            var i;
+            var nameLang = [
+               "HTML", "CSS", "And JavaScript"
+            ];
+
+            for (i = 0; i < nameLang.length; i++) {
+
+                document.getElementById("container_lang").innerHTML += nameLang[i] + " ";
+
+            }
+        });
+
+        $(function () {
+            $('.card').click(function () { $(this).toggleClass('flip'); });
+        });
+    </script>
+    
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            var btnSend = document.getElementById("btnSend");
+            var firstname = document.getElementById("firstname");
+            var email = document.getElementById("email");
+            var comments = document.getElementById("comments");
+        });
+        function validate(value_pass) {
+            if (value_pass.length > 1) {
+                email.style.background = "#FFFFFF";
+                email.disabled = false
+            } else {
+                btnSend.disabled = true;
+            }
+        }
+
+        function validate2(value_pass) {
+            if (email.value.length > 1) {
+                comments.style.background = "#FFFFFF";
+                comments.disabled = false
+            } else {
+                btnSend.disabled = true;
+            }
+        }
+        function  validate3(value_pass) {
+            if (comments.value.length > 1) {
+                btnSend.disabled = false;
+            } else {
+                btnSend.disabled = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <div class="page-wrapper">
+            <!-- <a href="https://www.itc.tech/" class="nav-item"></a> -->
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="active" href="contact.html" >Contact</a>
+            </div>
+        </div>
+    </section>
+    <a id="contact"></a>
+    <section class"contact_form">
+        <div class="container">
+            <div class="col-sm-6 col-md-10 col-md-offset-1">
+                <h3 class="color-primary">Contact me</h3>
+                <!--<form class="form-email" data-success="Thank you for contact me" data-error="Please fill form fields">
+                    <input type="text" class="validate-required">
+                    <input type="text" class="validate- " name="last-name" placeholder="last name">
+                    <input type="text" class="validate-required" name="email" placeholder="email">
+                    <input type="text" class="validate-required" name="comments" placeholder="comments">
+                    <button type="submit">Submit</button>
+                </form>-->
+                <form data-success="Thank you for contact me" data-error="Please fill form fields">
+                    <p>
+                        <label for="Name">
+                            Name
+                            <span style="color:red">*</span>
+                        </label>
+                        <input type="text" id="firstname" name="firstname" placeholder="First name" onkeyup="validate(this.value);" required>
+                    </p>
+                    <p>
+                        <label for="Last-name">
+                            Last Name
+                        </label>
+                        <input type="text" name="last-name" placeholder="Last name">
+                    </p>
+                    <p>
+                        <label for="email">
+                            Email
+                            <span style="color:red">*</span>
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="email@domain.com" onkeyup="validate2(this.value);" required>
+                    </p>
+                    <p>
+                        <label for="message" class="put_message">
+                            Message
+                            <span style="color:red">*</span>
+                        </label>
+                        <textarea name="comments" id="comments" placeholder="Leave your comment here ..." onkeyup="validate3(this.value);" required></textarea>
+                    </p>
+
+                    <button type="submit" name="btnSend" id="btnSend" disabled>Send</button>
+                    <p>
+                        <span class="obligatorio"> * </span>The fields are required.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div>&#169; Israel Tech Challenge</div>
+    <footer>
+        <div class="footnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="contact.html">Contact</a>
+            <!--<p>"This page was built using: HTML, CSS and JavaScript"</p>-->
+            <p id="container_lang">This page was built using </p>
+        </div>
+    </footer>
+    <script src="portfolio.js"></script>
+</body>
+</html>
